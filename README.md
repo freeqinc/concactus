@@ -1,5 +1,5 @@
 # Concactus
-A python based HTML fragment importer. 
+A python based preprocessor for HTML imports.
 
 ## Demo
 
