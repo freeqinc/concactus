@@ -3,7 +3,7 @@ A python based HTML fragment importer.
 
 ## Demo
 
-<a href="index.html" target="_blank">Click here to view the demo.</a>
+<a href="http://jesseqin.com/concactus/" target="_blank">Click here to view the demo.</a>
 
 >This is the same demo that is available for download.
 
@@ -19,3 +19,50 @@ Place your importable HTML fragments in that concactus folder. In this example:
 
 ## Use
 
+By default, concactus will target the HTML files that are in the same directory as the 'concactus' folder. In this example:
+
+> ignore.html, index.html, page1.html, and page2.html
+
+To indicate an HTML fragment import, simply use these comments in your HTML files: <br/>
+(using the navigation.html fragment here as an example)
+
+> &lt;!-- @concactus import: navigation.html --> <br/> 
+> &lt;!-- @concactus end --> <br/>
+> <img src="assets/readme2.png" width=400>
+
+To execute the import, simply run the python script:
+
+> ./concactus.py <br/>
+> <img src="assets/readme3.png" width=400>
+
+The space between the @concactus comments will then be written over with the code from the HTML fragments:
+
+> <img src="assets/readme4.png" width=400>
+
+That's it!
+
+## Optional Settings
+
+You can access option settings by editing:
+
+> concactus.ini <br/>
+> <img src="assets/readme5.png" width=400> 
+
+<em>All pathnames are relative to where conactus.ini is located.</em> <br/>
+
+<b>inputPath</b>: path to where input HTML files are located <br/>
+<b>outputPath</b>: path to where processed HTML files should be put
+> By default, inputPath and outputPath are the same, meaning that concactus will simply overwrite the files in that path (best for organization). Don't worry, when run, concactus will only replace code inside the &lt;!-- @concactus --> comments.
+
+<b>importPath</b>: path to where HTML fragments are located
+
+### Ignoring Files
+If you want concactus to ignore certain files within the inputPath while parsing, simply include that filename in the concactus.ini file like so:
+
+> filetoignore.html: IGNORE
+
+## Fin
+
+Thank you for using concactus! <br/>
+
+> <img src="assets/concactusdemo.gif" width=600> 
