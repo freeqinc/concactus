@@ -30,7 +30,6 @@ a {
 
 
 body {
-    overflow: hidden;
     background: #efefef;
     font-family: "robotolight", sans-serif;
     color: #151515;
@@ -42,6 +41,8 @@ nav{
     height: 90px;
     line-height: 90px;
     border-bottom: 1px solid #08910E;
+    background: #efefef;
+    z-index: 999;
 }
 
 nav > a:first-child {
@@ -88,25 +89,36 @@ nav > a:first-child {
 section {
     width: 100%;
     height: 100%;
-    padding: 0 30px;
-    padding-top: 150px;
+    text-align: center;
 }
 
 #demo-text{
+    box-sizing: border-box;
+    padding: 0 30px;
+    padding-top: 150px;
     font-size: 1.8em;
     width: 100%;
     color: #565656;
+    text-align: left;
 }
 
 #demo-text b {
     color: #252525;
 }
 
+#demogif {
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+}
+
 footer{
     text-align: center;
     width: 100%;
-    position: absolute;
-    bottom: 5px;
+    position: fixed;
+    bottom: 0px;
+    padding: 3px 0;
+    background: #efefef;
+    opacity: 0.8;
+    z-index: 999;
 }
 
 footer a {
@@ -119,7 +131,7 @@ footer a:hover {
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 610px) {
     nav {
         height: 120px;
     }
@@ -146,6 +158,11 @@ footer a:hover {
 
     .nav-button {
         line-height: 50px;
+    }
+
+    #demogif {
+        width: 95%;
+        height: auto;
     }
 }
 
