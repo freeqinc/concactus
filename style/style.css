@@ -110,6 +110,11 @@ section {
     box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
 }
 
+#gitlink {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
 footer{
     text-align: center;
     width: 100%;
