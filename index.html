@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="html import solution, html module importer, python script">
+    <meta name="author" content="Jesse Qin">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <meta name=viewport content="width=device-width, initial-scale=.8, minimum-scale = .8, user-scalable=yes">
+    <title>Demo - Index</title>
+</head>
+<body>
+    <input id="nav-info" style="display: none" type="hidden" value="0">
+
+    <!-- @concactus import: navigation.html -->
+    <nav>
+        <a href="index.html">D E <span id="logo-unf">M O</span></a>
+        <div id="nav-buttons">
+            <a href="index.html">
+                <div class="nav-button">
+                    H O M E
+                    <div class="nav-selected"></div>
+                </div>
+            </a>
+            <a href="page1.html">
+                <div class="nav-button">
+                    N A V &nbsp; 1
+                    <div class="nav-selected"></div>
+                </div>
+            </a>
+            <a href="page2.html">
+                <div class="nav-button">
+                    N A V &nbsp; 2
+                    <div class="nav-selected"></div>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <script type="text/javascript">
+    var navSelected = (document.getElementById('nav-info').value); 
+    document.getElementsByClassName('nav-selected')[navSelected].style.display = 'block';
+    </script>
+    <!-- @concactus end -->
+
+    <section>
+
+        <div id="demo-text">Try changing any of the HTML fragments in concactus/import! <br/><br/> Make any changes to <b>footer.html</b> or <b>navigation.html</b>, run the <b>concactus.py</b> again, and viola, simple imports!</div>
+
+        <!-- @concactus import: footer.html -->
+        <footer>
+        	&copy; 2015 <a href="http://jesseqin.com" target="_blank">Jesse Qin</a>
+        </footer>  
+        <!-- @concactus end -->
+    </section>
+
+</body>
+</html>

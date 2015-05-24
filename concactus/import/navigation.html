@@ -1,0 +1,27 @@
+<nav>
+    <a href="index.html">D E <span id="logo-unf">M O</span></a>
+    <div id="nav-buttons">
+        <a href="index.html">
+            <div class="nav-button">
+                H O M E
+                <div class="nav-selected"></div>
+            </div>
+        </a>
+        <a href="page1.html">
+            <div class="nav-button">
+                N A V &nbsp; 1
+                <div class="nav-selected"></div>
+            </div>
+        </a>
+        <a href="page2.html">
+            <div class="nav-button">
+                N A V &nbsp; 2
+                <div class="nav-selected"></div>
+            </div>
+        </a>
+    </div>
+</nav>
+<script type="text/javascript">
+var navSelected = (document.getElementById('nav-info').value); 
+document.getElementsByClassName('nav-selected')[navSelected].style.display = 'block';
+</script>
