@@ -52,7 +52,7 @@ That's it!
 
 ## Optional Settings
 
-You can access option settings by editing:
+You can access optional settings by editing:
 
 > concactus.ini <br/>
 > <img src="assets/readme5.png" width=400> 
