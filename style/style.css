@@ -100,10 +100,17 @@ section {
     width: 100%;
     color: #565656;
     text-align: left;
+    padding-bottom: 35px;
 }
 
 #demo-text b {
     color: #252525;
+}
+
+#graphic-demo {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 #demogif {
@@ -111,7 +118,7 @@ section {
 }
 
 #gitlink {
-    font-size: 1.5em;
+    font-size: .9em;
     text-decoration: underline;
 }
 
