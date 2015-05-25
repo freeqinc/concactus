@@ -25,7 +25,7 @@ Place your importable HTML fragments in that concactus folder. In this example:
 
 Make the script runnable:
 
->> chmod 755 concactus.py
+> chmod 755 concactus.py
 
 ## Use
 
