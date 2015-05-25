@@ -2,6 +2,11 @@
 A python based preprocessor for HTML imports. <br/>
 Simple solution for importing common HTML on multiple pages!
 
+### Why use this?
+
+The most lightweight option when it comes to final pages for the web. Concactus will actually write the imports to your HTML files. This makes the processed files testable locally and avoids having to deal with any server side requests that can potentially slow down your web pages with unnecessary fetch latency. 
+
+
 ## Demo
 
 <a href="http://jesseqin.com/concactus/" target="_blank">Click here to view the demo.</a>
