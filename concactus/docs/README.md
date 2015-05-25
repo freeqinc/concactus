@@ -23,6 +23,10 @@ Place your importable HTML fragments in that concactus folder. In this example:
 
 > footer.html and navigation.html
 
+Make the script runnable:
+
+>> chmod 755 concactus.py
+
 ## Use
 
 By default, concactus will target the HTML files that are in the same directory as the 'concactus' folder. In this example:
@@ -37,7 +41,6 @@ To indicate an HTML fragment import, simply use these comments in your HTML file
 > <img src="assets/readme2.png" width=400>
 
 To execute the import, simply run the python script:
-
 > ./concactus.py <br/>
 > <img src="assets/readme3.png" width=400>
 
