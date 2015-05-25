@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 """concactus.py
-
-Python script that assists in importing common html fragments into 
-multiple html files.
+A python based preprocessor for HTML imports. 
+Simple solution for importing common HTML on multiple pages!
 """
 __author__ = "Jesse Qin"
 __copyright__ = "Copyright 2015, Jesse Qin"
