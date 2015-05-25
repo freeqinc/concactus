@@ -1,5 +1,6 @@
 # Concactus
-A python based preprocessor for HTML imports.
+A python based preprocessor for HTML imports. <br/>
+Simple solution for importing common HTML on multiple pages!
 
 ## Demo
 
