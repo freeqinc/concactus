@@ -67,7 +67,10 @@ def importIntoFile(filename, outputFile):
 			skipWrite = True
 			wFile.write(line)
 			#handling indentation and space consistency
-			spaceAppend = re.match(r"\s+", line).group()
+			if re.match(r"\s+", line) == None:
+				spaceAppend = ""
+			else:
+				spaceAppend = re.match(r"\s+", line).group()
 			line = line.replace(importStrL, "").replace(importStrR, "").strip()
 			wFile.write('\n')
 			#import lines, matching indentation
